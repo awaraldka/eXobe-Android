@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <CheckBox
+            android:id="@+id/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/red"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/Title" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:layout_gravity="center"
+        android:text="Storage Fee:"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Title" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:layout_gravity="center"
+               android:text="Daily"
+               android:textColor="@color/title_myprofile"
+               android:textSize="@dimen/Title" />
+
+
+           <EditText
+               android:id="@+id/dailyfees"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:background="@drawable/backgroundsearch"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:hint="Charges"
+               android:inputType="numberDecimal"
+               android:maxLength="10"
+               android:padding="8dp"
+               android:singleLine="true"
+               android:textColor="@color/black"
+               android:textSize="@dimen/SUbTitle" />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginHorizontal="@dimen/_2sdp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:layout_gravity="center"
+               android:text="Weekly"
+               android:textColor="@color/title_myprofile"
+               android:textSize="@dimen/Title" />
+
+
+           <EditText
+               android:id="@+id/weeklyFees"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/backgroundsearch"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:inputType="numberDecimal"
+               android:maxLength="10"
+               android:layout_gravity="center"
+               android:padding="8dp"
+               android:hint="Charges"
+               android:singleLine="true"
+               android:textColor="@color/black"
+               android:textSize="@dimen/SUbTitle" />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:layout_gravity="center"
+               android:text="Monthly"
+               android:textColor="@color/title_myprofile"
+               android:textSize="@dimen/Title" />
+
+           <EditText
+               android:id="@+id/monthlyFees"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/backgroundsearch"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:inputType="numberDecimal"
+               android:maxLength="10"
+               android:layout_gravity="center"
+               android:padding="8dp"
+               android:hint="Charges"
+               android:singleLine="true"
+               android:textColor="@color/black"
+               android:textSize="@dimen/SUbTitle" />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginStart="@dimen/_2sdp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:layout_gravity="center"
+               android:text="Qtrly"
+               android:textColor="@color/title_myprofile"
+               android:textSize="@dimen/Title" />
+
+           <EditText
+               android:id="@+id/qtrly"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/backgroundsearch"
+               android:fontFamily="@font/source_sans_pro_regular"
+               android:inputType="numberDecimal"
+               android:maxLength="10"
+               android:layout_gravity="center"
+               android:padding="8dp"
+               android:hint="Charges"
+               android:singleLine="true"
+               android:textColor="@color/black"
+               android:textSize="@dimen/SUbTitle" />
+
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/light_grey"/>
+
+
+</LinearLayout>

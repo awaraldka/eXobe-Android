@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_placeholder_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/red"
+                android:gravity="bottom"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_12sdp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Profile_picture"
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:src="@drawable/side_menu_profile"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1.3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:singleLine="true"
+                        android:text="Guest"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Admin1234@gmail.com"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/Home_RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/white_bg_botton_border"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/new_home"
+                            app:tint="@color/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/source_sans_pro_regular"
+                            android:text="Home"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/Customer_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/MyCart_Customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/new_cart"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="My Cart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/MyDeals_Customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/dealTab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="19dp"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/new_deal"
+                                    app:tint="@color/red" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/rightarrow"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow" />
+
+                            <ImageView
+                                android:id="@+id/downarrow"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_dealscustomer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dealTab"
+                            android:layout_marginLeft="60dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/onproducts"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals on products"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/onservices"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals on Bookings"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/Order_History"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/new_order"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="Order History"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/myWalletClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wallet"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="My Wallet"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/RequestedServices_Customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/new_order"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="My Bookings"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/PaymentHistory_Customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="40dp"
+                            android:fontFamily="@font/source_sans_pro_semibold"
+                            android:gravity="left"
+                            android:text="Payment History"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/HeaderHeading"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/ProductInquiry_Customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="40dp"
+                            android:fontFamily="@font/source_sans_pro_semibold"
+                            android:gravity="left"
+                            android:text="Product Inquiry"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/HeaderHeading"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:src="@drawable/right_arrow" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Retailer_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/productCategoryRetailerRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/category_unselected_new"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="Product Category"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/MyCart_Retailer_RelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/new_cart"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="My Cart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/orders_RelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/new_order"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="Order History"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/bookingsServicesRetailer"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/booking_unselected_new"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Booking  Category"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/myWalletClickRetailer"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wallet"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="My Wallet"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/requestedServicesRetailer"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/order_history_new"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="My Bookings"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Deals_Retailer_RelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/dealTabRetailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="19dp"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/new_deal"
+                                    app:tint="@color/red" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/rightarrowretailer"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow" />
+
+                            <ImageView
+                                android:id="@+id/downarrowretailer"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/MyEarningsRetailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/white_bg_botton_border"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="25dp"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/wallet"
+                                    app:tint="@color/red"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="My Earnings"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_deals_retailers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dealTabRetailer"
+                            android:layout_marginLeft="60dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/dealsfromwholesalers"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals on products"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/onServicesRetailer"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals on Bookings"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/dealsfromcustomer"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals to customers"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/PaymentHistory_Retailer_RelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/paymentTabRetailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="19dp"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/order_history_new"
+                                    app:tint="@color/red" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Payment History"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/rightarrowretailer1"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow" />
+
+                            <ImageView
+                                android:id="@+id/downarrowretailer1"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_paymenthistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/paymentTabRetailer"
+                            android:layout_marginLeft="60dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/paymentfromcustomer"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Payment from customers"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/paymenttowholesalers"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Payment to wholesalers"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Serviseprovider_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/RequestedServices_serviseprovider"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/order_history_new"
+                                app:tint="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:gravity="left"
+                                android:text="Requested Services"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/MyEarnings"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/wallet"
+                                app:tint="@color/red"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="My Earnings"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/RejectedOrders"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/rejected_order"
+                                app:tint="@color/red"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Rejected Orders"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                tools:layout_editor_absoluteX="2dp"
+                                tools:layout_editor_absoluteY="115dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/MyDeals_serviseprovider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/dealTabSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="19dp"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/new_deal"
+                                    app:tint="@color/red" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/rightarrow_sp"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow" />
+
+                            <ImageView
+                                android:id="@+id/downarrow_sp"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_deals_sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dealTabSP"
+                            android:layout_marginLeft="60dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+
+                            <LinearLayout
+                                android:id="@+id/dealsfromcustomersp"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Deals to customers"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    -
+
+
+                    <RelativeLayout
+                        android:id="@+id/PaymentHistory_serviseprovider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_bg_botton_border"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/paymentTabSP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="19dp"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/order_history_new"
+                                    app:tint="@color/red" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Payment History"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/rightarrow_sp1"
+                                android:layout_width="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow" />
+
+                            <ImageView
+                                android:id="@+id/downarrowsp1"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_paymenthistorysp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/paymentTabSP"
+                            android:layout_marginLeft="60dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#D2D2D2" />
+
+                            <LinearLayout
+                                android:id="@+id/paymentfromcustomersp"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/source_sans_pro_regular"
+                                    android:text="Payment from customers"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp"
+                                    tools:layout_editor_absoluteX="2dp"
+                                    tools:layout_editor_absoluteY="115dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Login_RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/white_bg_botton_border"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/login_new"
+                            app:tint="@color/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/source_sans_pro_regular"
+                            android:gravity="left"
+                            android:text="Login"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Logout_RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/white_bg_botton_border"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="25dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/new_logout"
+                            app:tint="@color/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:fontFamily="@font/source_sans_pro_regular"
+                            android:gravity="left"
+                            android:text="Logout"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            tools:layout_editor_absoluteX="2dp"
+                            tools:layout_editor_absoluteY="115dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

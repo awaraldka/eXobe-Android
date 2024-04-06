@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/viewClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/dummyproduct" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/customername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/sourcesanspro_medium"
+                android:singleLine="true"
+                android:text="Shubham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/Total_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:singleLine="true"
+                android:text="R 720.00"
+                android:textColor="@color/red"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:singleLine="true"
+                android:text="1122546355"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+            <TextView
+                android:id="@+id/paymentstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:singleLine="true"
+                android:text="Pending"
+                android:textSize="@dimen/SUbTitle" />
+
+            <TextView
+                android:id="@+id/orderdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:singleLine="true"
+                android:text="20/05/2022"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:singleLine="true"
+                android:text="Okhla,New Delhi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/light_grey" />
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:text="ID Document"
+            android:textColor="@color/title_myprofile"
+            android:textSize="@dimen/SUbTitle" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/backgroundsearch"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/documentId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_weight="1.2"
+                android:background="@drawable/login_button"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Choose File"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/SUbTitle" />
+
+            <TextView
+                android:id="@+id/COI_Choose_File_Path"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:layout_weight="1.6"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:gravity="center"
+                android:singleLine="true"
+                android:hint="no file selected"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/COI_Delete_icon"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_toEndOf="@+id/COI_Choose_File_Path"
+                android:layout_weight="0.2"
+                android:src="@drawable/delete_icon"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.services.CommonBusinessFormActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/red"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/backButtonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/white" />
+
+
+            <TextView
+                android:id="@+id/titleHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Business Form"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Personal Information"
+                android:textColor="@color/red"
+                android:textSize="@dimen/HeaderHeading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="First Name"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/firstNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter first name"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/firstNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Last Name"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/lastNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter last name"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/lastNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Mobile Number"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/MobileNumbeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter your mobile number"
+                android:inputType="text|textCapCharacters|number"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/MobileNumberTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Email"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/EmailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter your email address"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/EmailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/commonForPDandDD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Verification"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/HeaderHeading" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Driver's License Number"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/DriverLicenseEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter driver license number"
+                    android:inputType="text|textCapCharacters|number"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/riverLicenseTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Registration Number(if applicable)"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/VehicleRegistrationNumberEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your vehicle registration number"
+                    android:inputType="text|textCapCharacters|number"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/VehicleRegistrationNumberTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Information"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/HeaderHeading" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Type(Car,Motorcycle,Bicycle, etc.)"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/VehicleTypeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your vehicle type"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/VehicleTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Make and Model"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/MakeAndModelEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your vehicle make and model"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/VehicleMakeAndModelTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Year"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/VehicleYearEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your vehicle year"
+                    android:inputType="number"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/VehicleYearTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Color"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/VehicleColorEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your vehicle color"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/VehicleColorTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Insurance"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/HeaderHeading" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Vehicle Insurance Information"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/VehicleInsuranceInformationEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your vehicle insurance information"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/VehicleInsuranceInformationTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fieldEntitylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Business Information"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/HeaderHeading" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Business Name"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/BusinessNameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your business name"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/BusinessNameTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Business Type"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+                <LinearLayout
+                    android:id="@+id/BusinessTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="10dp"
+                    android:background="@drawable/backgroundsearch">
+
+                    <Spinner
+                        android:id="@+id/BusinessTypeEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/business_type"
+                        android:spinnerMode="dropdown"/>
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/BusinessTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Business Address"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/BusinessAddressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter business address"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/BusinessAddressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Business WebSite"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/BusinessWebSiteEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter business website"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/BusinessWebsiteTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Business Email"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/BusinessEmailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter business email"
+                    android:inputType="textCapWords"
+                    android:maxLength="100"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/BusinessEmailTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Tax Information"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/HeaderHeading" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="EIN/SSN"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/EINEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your EIN or SSN"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/EINTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="State Sales Tax ID(If applicable)"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/taxIdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter your state sales tax Id"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/taxIdTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Volume and Forecasting"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/HeaderHeading" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:text="Estimated Montly Order Volume"
+                    android:textColor="@color/title_myprofile"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <EditText
+                    android:id="@+id/OrderVolumeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/backgroundsearch"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:hint="Enter number of orders you expect to fulfill"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:padding="11dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/SUbTitle" />
+
+
+                <TextView
+                    android:id="@+id/OrderVolumeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/error"
+                    android:textSize="@dimen/_11sdp" />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Banking and Payment"
+                android:textColor="@color/red"
+                android:textSize="@dimen/HeaderHeading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Bank Name"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/BankNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter bank name"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/BankNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Branch Name"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/BranchNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter branch name"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/BranchNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Branch Code"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/BranchCodeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter branch code"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/BranchCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="SWIFT Code"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/SwiftCodeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter SWIFT code"
+                android:inputType="text|textCapCharacters|number"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/SiftCodeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Account Type"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/AccountTypeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Select account type"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/AccountTypeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Account Holder Name"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/AccountHolderEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter account holder name"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/AccountHolderTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Account Number"
+                android:textColor="@color/title_myprofile"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <EditText
+                android:id="@+id/AccountNumberEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter account number"
+                android:inputType="text|textCapCharacters|number"
+                android:maxLength="25"
+
+                android:padding="11dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/AccountNumberTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/error"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/ProceedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_35sdp"
+                android:background="@drawable/login_button"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="@dimen/_1sdp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/Title" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

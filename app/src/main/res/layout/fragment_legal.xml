@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutUsFragment">
+
+    <LinearLayout
+        android:id="@+id/contact_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/address_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/SUbTitle"
+                        android:text="E-mail"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/cu_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:maxLines="1"
+                        android:text=""
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:weightSum="3"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_weight="0.5"
+                        android:text="Ph. no."
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/cu_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:textSize="@dimen/_13sdp"
+                        android:maxLines="1"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text=""
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/address_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/SUbTitle"
+                        android:text="Link"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        />
+
+                    <TextView
+                        android:id="@+id/cu_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/SUbTitle"
+                        android:maxLines="1"
+                        android:text=""
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:textColor="@color/black"
+                        android:justificationMode="inter_word"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/source_sans_pro_regular"
+                    android:textColor="@color/black"
+                    android:justificationMode="inter_word"
+                    />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true"
+        android:progress="50"
+        android:theme="@style/ProgressDialogStyle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/noDataFoundContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="No data found"
+        android:textColor="#8D808080"
+        android:textSize="@dimen/_15sdp" />
+</RelativeLayout>

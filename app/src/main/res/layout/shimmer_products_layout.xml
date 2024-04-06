@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:background="@color/colorGrey"
+                android:layout_height="match_parent"/>
+
+            <CheckBox
+                android:id="@+id/orderCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:buttonTint="@color/red"/>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_about_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/cross_button"
+                android:fontFamily="@font/sourcesanspro_medium"
+                android:paddingEnd="@dimen/_5sdp"
+                android:background="@color/colorGrey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+            <TextView
+                android:id="@+id/ProductId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/cross_button"
+                android:fontFamily="@font/sourcesanspro_medium"
+                android:paddingEnd="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@color/colorGrey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:background="@color/colorGrey"
+                android:textColor="@color/red"
+                android:textSize="@dimen/SUbTitle" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:background="@color/colorGrey"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <TextView
+                android:id="@+id/sizeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:singleLine="true"
+                android:background="@color/colorGrey"
+                android:textColor="@color/card_items_color"
+                android:textSize="@dimen/SUbTitle" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/light_grey" />
+
+
+    <LinearLayout
+        android:id="@+id/ProceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/_5sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/login_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:gravity="center_horizontal"
+            android:text="Proceed"
+            android:paddingVertical="@dimen/_1sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

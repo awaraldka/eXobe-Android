@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="@string/OTPVAL"
+                android:textSize="@dimen/Title" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center"
+            android:text="@string/OTP"
+            android:textSize="@dimen/SUbTitle"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/OtpScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:weightSum="4"
+            android:elevation="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/focus">
+
+                <EditText
+                    android:id="@+id/et_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/focus">
+
+                <EditText
+                    android:id="@+id/et_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/focus">
+
+                <EditText
+                    android:id="@+id/et_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="*"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/focus">
+
+                <EditText
+                    android:id="@+id/et_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:hint="*"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/red"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/ResendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/Resend"
+
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ForgotSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/login_button"
+            android:text="@string/Submit"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_20sdp"
+             />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="@dimen/_5sdp"-->
+<!--        android:paddingHorizontal="@dimen/_10sdp"-->
+<!--        app:cardCornerRadius="@dimen/_8sdp">-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_margin="@dimen/_20sdp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:text="@string/otpCode"-->
+<!--            android:textSize="@dimen/_13sdp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Enter 4 - digits code"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginLeft="@dimen/_5sdp"-->
+<!--            android:textSize="@dimen/_13sdp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"/>-->
+
+<!--        <com.chaos.view.PinView-->
+<!--            android:id="@+id/OTP_pinView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:itemCount="4"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="number"-->
+<!--            android:elevation="@dimen/_10sdp"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            app:lineColor="@color/grey"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/_13sdp"-->
+<!--            app:itemWidth="65dp"-->
+<!--            app:itemHeight="65dp"-->
+<!--            app:itemRadius="10dp"-->
+<!--            app:itemSpacing="12dp"-->
+<!--            app:viewType="rectangle"-->
+<!--            style="@style/PinWidget.PinView"-->
+<!--            tools:ignore="MissingClass" />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/dynTime"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/source_sans_pro_regular"-->
+<!--                    android:text="0:00"-->
+<!--                    android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                    android:textColor="@color/Redish"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/resendCode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/source_sans_pro_regular"-->
+<!--                    android:text="Resend code"-->
+<!--                    android:textColor="@color/Redish"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+
+<!--            </LinearLayout>-->
+<!--        </RelativeLayout>-->
+
+<!--     <Button-->
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="wrap_content"-->
+<!--         android:text="@string/Submit"-->
+<!--         android:textAllCaps="false"-->
+<!--         android:background="@drawable/login_button"-->
+<!--         android:layout_marginTop="@dimen/_12sdp"-->
+<!--         android:textSize="@dimen/_13sdp"-->
+<!--         android:padding="@dimen/_14sdp"-->
+<!--         android:textColor="@color/white"-->
+<!--         android:layout_marginBottom="@dimen/_12sdp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</LinearLayout>-->

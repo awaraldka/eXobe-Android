@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Form_ETorTV">@dimen/_14sdp</dimen>
+    <dimen name="HeaderHeading">@dimen/_14sdp</dimen>
+    <dimen name="Title">@dimen/_14sdp</dimen>
+    <dimen name="LoginTitle">@dimen/_18sdp</dimen>
+    <dimen name="SUbTitle">@dimen/_13sdp</dimen>
+    <dimen name="hintsize">@dimen/_12sdp</dimen>
+    <dimen name="matterText">@dimen/_12sdp</dimen>
+    <dimen name="matterText2">@dimen/_11sdp</dimen>
+    <dimen name="bottom_nav">@dimen/_9sdp</dimen>
+    <dimen name="error">@dimen/_11sdp</dimen>
+    <dimen name="price">@dimen/_14sdp</dimen>
+    <dimen name="errorsize">@dimen/_11sdp</dimen>
+    <dimen name="button">@dimen/_14sdp</dimen>
+    <dimen name="bottom_sheet_height">300dp</dimen>
+
+
+</resources>

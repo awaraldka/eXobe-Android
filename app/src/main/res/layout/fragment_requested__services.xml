@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.allServices.Requested_Services">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RequestedServices_Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:visibility="visible"
+        android:overScrollMode="always"/>
+    <LinearLayout
+        android:id="@+id/no_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service not available"
+            android:textColor="#8D808080"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/RequestedServices_progressbar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:visibility="gone"
+        android:theme="@style/ProgressDialogStyle"
+        android:layout_centerInParent="true"
+        android:progress="50"
+        />
+</RelativeLayout>

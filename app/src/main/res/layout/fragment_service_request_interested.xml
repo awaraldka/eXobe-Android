@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.allServices.ServiceRequestInterestedFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Booking Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+            <TextView
+                android:id="@+id/bookingCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Select booking category"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Booking Sub Category"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+            <TextView
+                android:id="@+id/bookingSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Select booking sub category"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Actual Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+            <TextView
+                android:id="@+id/actualPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Select booking sub category"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Interested Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+            <EditText
+                android:id="@+id/interestedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/backgroundsearch"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:hint="Enter interested price"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/matterText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:text="Campaign Preference"
+                android:textColor="@color/black"
+                android:textSize="@dimen/SUbTitle" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/semiParticipation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:buttonTint="@color/red"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Semi Automatic"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/SUbTitle" />
+
+
+                    <RadioButton
+                        android:id="@+id/automaticParticipation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:buttonTint="@color/red"
+                        android:fontFamily="@font/source_sans_pro_regular"
+                        android:text="Automatic"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/SUbTitle" />
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/requestForInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button"
+            android:text="@string/request_for_interest"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:paddingVertical="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

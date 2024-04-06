@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "127786420955",
+    "project_id": "exobeapplication",
+    "storage_bucket": "exobeapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127786420955:android:b94c9a23c78d29e5db5afe",
+        "android_client_info": {
+          "package_name": "com.exobe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127786420955-a8o7fgoslik05q40io9furkb90c6qm6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exobe",
+            "certificate_hash": "72df8e3abaf028688ea71b0f5e99a2c1f689aab2"
+          }
+        },
+        {
+          "client_id": "127786420955-p1mb1atbqhq9b2hikvlbid70elgsdt52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa0DOmAFrfAy4IeHk2vImc1Nu7rlORKgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127786420955-nihvbmlt575sd883mj7ogg58rskqilnv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "127786420955-g88p9vbne6hs4ll0ik4v6i0h7n19eqg3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.genie.development"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

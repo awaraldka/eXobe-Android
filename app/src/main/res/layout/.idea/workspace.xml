@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dab96656-8140-453f-9785-96e761e701a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Activities/TutorialScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Activities/TutorialScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/ImageSliderAdaptor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/ImageSliderAdaptor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/NotificationAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/ServicesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/ServicesAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/ServicesAvaliableAdapter_SP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/ServicesAvaliableAdapter_SP.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/dealForWholeSellerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Adaptor/dealForWholeSellerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/Fragments/My_Products.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/Fragments/My_Products.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/com/exobe/customClicks/SetTitles.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/com/exobe/customClicks/SetTitles.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/cardcorner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/ic_baseline_arrow_forward_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/ic_baseline_keyboard_arrow_right_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/on3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/on_board2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/pep.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/phone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable-v24/save.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable/phone_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable/selected.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable/selected.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../drawable/unselected.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../drawable/unselected.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fragment_my_products.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fragment_my_products.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_modallayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification_modallayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_added_successfully_alert_box.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product_added_successfully_alert_box.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slider_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/slider_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="29FbXw5BpilJe9ae5zlw2qK0xzv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../.." />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab96656-8140-453f-9785-96e761e701a1" name="Default Changelist" comment="" />
+      <created>1652711824351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652711824351</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

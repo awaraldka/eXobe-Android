@@ -1,0 +1,386 @@
+<resources>
+
+    <string name="HaveAccount">Don\'t have an account?</string>
+    <string name="FPass"><u>Forgot Password?</u></string>
+    <string name="EditForm"><u>Update Business Form</u></string>
+    <string name="Account">Already have an  account?</string>
+    <string name="Home_Title">Explore What \nYour Home Needs</string>
+    <string name="tuttitle1">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Tortor velit, aliquet amet, sit potenti</br>
+    <br> nisl convallis felis, dignissim. Non laoreet lectus</br>lorem nibh duis pellentesque
+    </string>
+    <string name="bumper_offer_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur velit at massa vehicula, quis fringilla urna gravida.</string>
+
+    <string name="material">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi id libero lorem est, dictum pulvinar
+        pretium. Lectus sit lacus ut id vitae phasellus bibendum.
+        Sapien aenean enim pulvinar morbi. Fermentum et amet fringilla adipiscing scelerisque ac adipiscing. Quis tellus massa</string>
+    <string name="meil">Meilleur Services</string>
+    <string name="serviceHeading">Requested Service List</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="search">Search</string>
+    <string name="status">Status</string>
+    <string name="dateandTime">12/09/2019 4:52PM</string>
+    <string name="ok">OK</string>
+
+    //raghav
+    <string name="app_name">Exobe</string>
+    <string name="Login">Log In</string>
+    <string name="SignUp">REGISTER</string>
+    <string name="Submit">Submit</string>
+    <string name="Register">Don\'t have an account?</string>
+    <string name="LOGIN">Already have an account?</string>
+    <string name="Check">Remember me</string>
+    <string name="ForogtPassword">Please enter new password.</string>
+    <string name="tut1">Shop anywhere anytime</string>
+    <string name="tut2">The eXobe Shopping Style!</string>
+    <string name="tut3">Book services anywhere anytime</string>
+    <string name="tut">In the comfort of your smart phone, we provide you with exclusive products at highly competitive prices. Take advantage of our amazing deals for most items in the catalogue. Remember, our deals are on a first come first serve basis!</string>
+    <string name="tutorial2">The more shoppers are active in the eXobe marketplace, the more are attractive deals, and the lower are the prices! Invite as many friends and families as possible to be part of the eXobe community by sharing the eXobe link and enjoy lower prices!</string>
+    <string name="tutorial3">In the comfort of your smart phone, we
+provide you with amazing deals on many categories of services at low costs. Our special offers are available on a first come first service basis. The more are consumers active on the platform the lower are our prices! Share the eXobe link and enjoy lower prices.</string>
+    <string name="Email">Enter your email address</string>
+    <string name="password">Enter your password</string>
+    <string name="phone">Enter your email address</string>
+    <string name="Start">Get Started</string>
+    <string name="forgot"><u>Forgot password?</u></string>
+    <string name="Resend"><u>Resend Code</u></string>
+    <string name="login"><u>Login</u></string>
+    <string name="register"><u>Register</u></string>
+    <string name="OTP">Enter 4- digits code</string>
+    <!--    <string name="OTPVAL">Please enter the 4-digits verification \ncode that was sent to email\nThe code is valid for 30 minutes.</string>-->
+    <string name="OTPVAL">Please enter the 4-digit verification \ncode that is sent to email.\n\nThe code is valid for 3 minute.</string>
+    <string name="add_Address">Add Address</string>
+    <string name="Personal_Details">Personal Details</string>
+    <string name="First_Name">Enter first name</string>
+    <string name="Last_Name">Enter last name</string>
+    <string name="Contact_Number">Enter contact number</string>
+    <string name="Address_details">Address details</string>
+    <string name="GST_No">GST  No:*</string>
+    <string name="Postcode">Postcode*</string>
+    <string name="Postcode_">Postcode</string>
+    <string name="Address">Address</string>
+    <string name="Transport_Name">Transport name</string>
+    <string name="Cancel">No</string>
+
+    //mohit
+    <string name="cart1">Product Added successfully</string>
+
+
+    //masoom
+    <string name="terms_condition"><![CDATA[Terms & condition]]></string>
+    <string name="condition">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem mattis amet feugiat ut viverra volutpat adipiscing. Suspendisse cursus maecenas faucibus sollicitudin quisque. Faucibus ultricies sit cursus sit lacus leo consequat. Tristique est fermentum mi neque risus, id. Venenatis aliquam ornare ut magna enim. Posuere viverra blandit porttitor amet phasellus. Aliquet nullam tincidunt diam malesuada. Turpis vestibulum quis erat amet ultricies scelerisque. In luctus facilisis pellentesque enim ut enim amet proin. Morbi eget pellentesque lobortis turpis tellus.
+In augue odio enim augue magna in ultrices elementum neque. Purus ut volutpat nec et sit egestas nec orci. Nibh tempus, amet aliquam nulla consectetur vivamus sit sed. Eget urna amet eget bibendum pulvinar non gravida. Imperdiet duis maecenas dignissim molestie amet pellentesque lectus neque sollicitudin. Suspendisse in penatibus nisl ipsum orci aliquet eget. Sed semper sodales egestas malesuada ipsum porttitor. Nulla tellus fringilla dignissim vel maecenas massa. Eget eget vel viverra curabitur id vel sit vel. Non adipiscing velit massa mauris mauris in. Facilisis vel amet odio sollicitudin lectus elit. Augue massa eu, mauris turpis ipsum, mauris, aenean.
+
+    </string>
+    // vishal strings
+    // MyProfileActivity
+    <string name="profile">Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_value">Sushree</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_value">Padai</string>
+    <string name="contact_number">Mobile Number</string>
+    <string name="contact_number_value">123456789</string>
+    <string name="post_code">Postal Code</string>
+    <string name="post_code_value">766034</string>
+    <string name="address">Address</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="address_value">Okhla Phase one</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string-array name="selectCategoryItem">
+        <item>Select</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+    </string-array>
+
+    <string-array name="spinnerHours">
+        <item>24 Hours Time</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>3</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="spinnerMins">
+        <item>Minutes</item>
+        <item>60</item>
+        <item>55</item>
+        <item>45</item>
+        <item>40</item>
+        <item>35</item>
+    </string-array>
+
+    <string-array name="Category">
+        <item>Select Category</item>
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Carpenter</item>
+        <item>Cleaner</item>
+        <item>Beauty</item>
+    </string-array>
+    <string-array name="Sub_Category">
+        <item>Select Sub Category</item>
+        <item>Ceiling Fan Installations</item>
+        <item>Outdoor and Pool Lighting </item>
+        <item>Washer/Dryer &amp; Appliance Lines</item>
+        <item>Outlet Repair and Installation</item>
+        <item>Panel Upgrades</item>
+        <item>New Wiring</item>
+        <item>Wiring Repair</item>
+        <item>Fitting Chimney and exhausts</item>
+        <item>Mcb Repairing</item>
+    </string-array>
+
+    // edit profile
+    <string name="first_name_hint">First name</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="contact_number_hint">123456789</string>
+    <string name="post_code_hint">000000</string>
+    <string name="address_hint">Okhla phase one</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Yes</string>
+
+    // anurag strings
+    <string name="settings">Settings</string>
+    <string name="term_condition"><![CDATA[Terms of Conditions]]></string>
+    <string name="product_enquiry">Product Enquiry</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="email">info@max.com</string>
+    <string name="thank_you">Thank You !</string>
+    <string name="for_sharing_your_query">for sharing your query,</string>
+    <string name="our_executive_will_connect_you_soon">our executive will connect you soon!</string>
+    <string name="order_history">Order History</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="latest_product_added">latest Product Added</string>
+    <string name="shop_by_category">Shop by Category</string>
+    <string name="category">Category</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu bibendum adipiscing viverra diam. Turpis luctus faucibus bibendum augue placerat. Non elit amet, phasellus cras gravida habitasse turpis et. Sagittis, eleifend sed quam placerat eu platea mattis libero. Semper consectetur sit enim sagittis vulputate in quam dolor, viverra. Morbi dui lacus ut netus fringilla egestas elementum. Lobortis vitae ligula orci tellus. Mattis lobortis porttitor dignissim gravida purus amet est diam, diam. Fermentum eu mattis adipiscing quam vel.
+Feugiat ultricies ultrices porttitor hac. Viverra pellentesque in sodales aliquam eu in in diam. Feugiat fringilla aenean erat urna ut est tortor condimentum. Enim turpis tortor scelerisque at sit suspendisse. Sed enim eu aliquet id elit aenean platea pulvinar elementum.
+Malesuada eleifend sit sit bibendum eget leo sagittis cursus. Pulvinar mi mi amet porttitor. Aenean turpis ut et, praesent aliquam ipsum. Tempor praesent tempus condimentum penatibus arcu donec in dignissim. Condimentum sed enim amet, ac vulputate condimentum volutpat. Sagittis, vulputate dui nullam in quis.
+    </string>
+    <string name="privacy2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam justo, vitae tellus sagittis. Et rhoncus tortor malesuada urna id lorem in semper.
+    </string>
+    <string name="about_us">About Us</string>
+    <string name="about">The <b>eXobe</b> App is the leading eCommerce Marketplace of products and services where participants come together to co-create value. With <b>eXobe</b>, customers are guaranteed to buy products and consume services at the best possible cost.\n<b>eXobe</b> is your one stop online shopping solution. No need to explore many Apps to get the best deal. <b>eXobe</b> achieves that for you instantly!
+</string>
+    <string name="faqs">FAQ</string>
+
+    //kavita
+
+    <string name="Update">Update</string>
+    <string name="Order_Review">Order Review</string>
+    <string name="Continue">Continue</string>
+    <string name="Amount_Details">Amount Details</string>
+    <string name="accepted_services_list">Accepted Services List</string>
+    <string name="thanks_for_accepting">Thanks For Accepting</string>
+    <string name="decrption">Enter your Description (if any)</string>
+    <string name="send">Send</string>
+
+
+    <string name="payment_details">Payment Details</string>
+    <string name="payment">For confirm the booking order kindly done the payment by using our following details and  upload the receipt.</string>
+    <string name="Bank_Details">Bank Details:</string>
+    <string name="Card_Payment">Card Payment:</string>
+    <string name="UPI_Payment">UPI Payment:</string>
+    <string name="addressmain">Okhla Phase-1, New Delhi</string>
+    <string name="pincode">Pincode - 123456</string>
+    <string name="delete">Are you sure you want to \n delete this address?</string>
+    <string name="primaryAddress">Are you sure you want to set this address as Primary Address?</string>
+    <string name="Services_Available">Services Available</string>
+    <string name="Search">Search for a service</string>
+    <string name="Services">All Electrition service providers</string>
+    <string name="All_Services">All service</string>
+    <string name="_98_reviews">98 Reviews</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    //anurag
+    <string name="description_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur velit at massa vehicula, quis fringilla urna gravida.</string>
+    <string name="thankyou">Thankyou!</string>
+    <string name="thankyou_msg">We got your request will get back to you soon</string>
+
+    <string name="line"><color></color>R250.00</string>
+
+    <string name="delete_order">Are you sure you want to \n delete this item?</string>
+
+
+    <string name="feedback">Kindly suggest how we could improve our services</string>
+
+
+    <string-array name="select_product_category">
+        <item>Select Category</item>
+        <item>Electrician</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+        <item>Designer</item>
+        <item>Cleaning</item>
+        <item>Salon</item>
+    </string-array>
+
+    <string-array name="time_slots">
+        <item>Select Time Slots</item>
+        <item>08:00 AM to 09:00 AM</item>
+        <item>09:00 AM to 10:00 AM</item>
+        <item>10:00 AM to 11:00 AM</item>
+        <item>12:00 AM to 01:00 PM</item>
+        <item>01:00 PM to 02:00 PM</item>
+        <item>02:00 PM to 03:00 PM</item>
+        <item>03:00 PM to 04:00 PM</item>
+        <item>04:00 PM to 05:00 PM</item>
+        <item>05:00 PM to 06:00 PM</item>
+        <item>06:00 PM to 07:00 PM</item>
+        <item>07:00 PM to 08:00 PM</item>
+    </string-array>
+
+
+    <string-array name="delivery_slots">
+        <item>Select Expected Days</item>
+        <item>3 to 7 days</item>
+        <item>3 to 8 days</item>
+        <item>3 to 9 days</item>
+        <item>3 to 10 days</item>
+    </string-array>
+
+    <string-array name="account_list">
+        <item>Select</item>
+        <item>Savings Account</item>
+        <item>Current Account</item>
+        <item>Business Account</item>
+        <item>Cheque Account</item>
+        <item>Transmission Account</item>
+    </string-array>
+
+    <string name="contact">Enter contact number</string>
+    <string name="off"><b>70%</b> off</string>
+
+    <string name="server_not_responding">server_not_responding</string>
+    <string name="submit">Submit</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="cancel_">Cancel</string>
+    <string name="comment">Comment</string>
+    <string name="thanks_for_your_message_our_team_will_contact_you_shortly_if_your_contact_details_where_included_in_the_message">Thanks for your message. Our team will contact you shortly if your contact details where included in the message.</string>
+    <string name="pin_code">Pincode</string>
+    <string name="see_all">See all</string>
+    <string name="total_balance">Wallet Balance:</string>
+    <string name="r_598_00">R 598.00</string>
+    <string name="home">Home</string>
+    <string name="find_root"><u>Find Route</u></string>
+    <string name="order_placed_desc">Your order #212423 was placed on 09th \nApril 2022.</string>
+    <string name="order_placed">Order placed</string>
+    <string name="terms_of_conditions">Terms &amp; Conditions</string>
+
+
+    <string-array name="business_type">
+        <item>Select business type</item>
+        <item>Savings Account</item>
+        <item>Sole Proprietorship</item>
+        <item>Partnership</item>
+        <item>Limited Liability Company (LLC)</item>
+        <item>Corporation</item>
+        <item>S Corporation</item>
+        <item>Nonprofit Organization</item>
+        <item>Cooperative</item>
+        <item>Franchise</item>
+        <item>Online Retailer</item>
+        <item>Brick-and-Mortar Retailer</item>
+        <item>Dropshipping Business</item>
+        <item>Wholesaler/Distributor</item>
+        <item>Manufacturer</item>
+        <item>Artisan/Craft Business</item>
+        <item>Subscription Box Business</item>
+        <item>Print-on-Demand Business</item>
+        <item>Service-Based Business</item>
+        <item>Import/Export Business</item>
+        <item>E-commerce Marketplace</item>
+        <item>Social Commerce Business</item>
+    </string-array>
+
+
+    <string-array name="filter_dashboard">
+
+        <item>Standard Services</item>
+        <item>Transportation Services</item>
+        <item>Fulfillment Services</item>
+
+
+    </string-array>
+
+    <string name="otp_retailer">Please enter the 4-digit verification \ncode that is sent to Retailer\'s email or mobile number.\n\nThe code is valid for 3 minute.</string>
+
+
+    <string name="otp_fe">Please enter the 4-digit verification \ncode that is sent to fulfillment Entity\'s email or mobile number.\n\nThe code is valid for 3 minute.</string>
+
+
+    <string name="otp_customer">Please enter the 4-digit verification \ncode that is sent to Customer\'s email or mobile number.\n\nThe code is valid for 3 minute.</string>
+
+
+    <string name="delivery_options">You can choose delivery options</string>
+    <string name="delivery_here"><u>here</u></string>
+    <string name="request_for_interest">Submit Preference</string>
+
+    <string-array name="participation_array">
+
+        <item>Select Sporadic Participation</item>
+        <item>Manual</item>
+        <item>Semi Automatic</item>
+        <item>Automatic</item>
+    </string-array>
+    <string name="title_activity_added_campaign">AddedCampaignActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="invoice"><u>Invoice</u></string>
+
+
+</resources>

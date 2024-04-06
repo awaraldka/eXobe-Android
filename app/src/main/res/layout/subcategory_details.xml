@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:padding="@dimen/_1sdp"
+    android:layout_weight="2">
+
+   <CheckBox
+       android:id="@+id/checkboxtext"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text=""
+       android:layout_marginLeft="@dimen/_8sdp"
+       android:layout_weight="1.2"
+       android:fontFamily="@font/source_sans_pro_regular"
+       android:buttonTint="@color/red"/>
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="0.8"
+       android:gravity="end"
+       android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical"
+          android:textColor="@color/red"
+          android:layout_marginTop="@dimen/_2sdp"
+          android:fontFamily="@font/source_sans_pro_regular"
+          android:textSize="@dimen/_12sdp"
+          android:layout_marginRight="2sp"
+          android:text="R"/>
+
+      <EditText
+          android:id="@+id/PriceField"
+          android:layout_width="@dimen/_60sdp"
+          android:layout_height="match_parent"
+          android:background="@drawable/delivery_background"
+          android:padding="@dimen/_6sdp"
+          android:textColor="@color/red"
+          android:hint="Amount"
+          android:fontFamily="@font/source_sans_pro_regular"
+          android:inputType="number"
+          android:maxLength="7"
+          android:textSize="@dimen/_10sdp"
+
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:gravity="center"
+          android:layout_marginTop="@dimen/_2sdp"
+          android:textColor="@color/red"
+          android:fontFamily="@font/source_sans_pro_regular"
+          android:textSize="@dimen/_12sdp"
+          android:layout_marginRight="@dimen/_10sdp"
+          android:text=" /Unit"/>
+   </LinearLayout>
+</LinearLayout>

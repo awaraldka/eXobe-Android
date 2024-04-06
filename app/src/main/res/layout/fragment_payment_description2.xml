@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PaymentDescription">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/clear_all_background"
+            android:text="Clear All"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Title"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:layout_gravity="end"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/payment_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingBottom="5dp"
+            android:overScrollMode="always"/>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

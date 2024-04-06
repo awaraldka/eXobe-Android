@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_round"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/PayWithPayFast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/line_bottomsheet"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/payfast_image"/>
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="You are about to add R 575.0 to you wallet using PayFast"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/paymentOptionForCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/sourcesanspro_medium"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/Title"
+            android:text="Select a payment mode"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/aboutToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ozow"/>
+
+            <TextView
+                android:id="@+id/ozowClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:text="OZOW"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_3sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Title"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/payfast_icon"/>
+
+            <TextView
+                android:id="@+id/payfastClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:text="Payfast"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_3sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Title"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/exobe"/>
+
+            <TextView
+                android:id="@+id/walletClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_button"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_3sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/source_sans_pro_regular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/Title"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
